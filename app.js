@@ -18,8 +18,15 @@ app.use(express.static('public'))
 
 // 設定首頁的路由並顯示餐廳清單
 app.get('/', (req, res) => {
-  console.log(restaurantList.results[0])
-  res.render('homepage',{ restaurantList: restaurantList.results})
+  // console.log(restaurantList.results)
+  res.render('homePage', { restaurantList: restaurantList.results})
+})
+
+app.get('/restaurants/:id', (req, res) => {
+  console.log(req.params.id)
+  const clickedRestaurantId = req.params.id
+  const restaurant = restaurantList.results.find(restaurant => restaurant.id.toString() === clickedRestaurantId)
+  res.render('showPage', { restaurant: restaurant })
 })
 
 // 利用listen將網頁呈現在htttp://localhost:3000
