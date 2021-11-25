@@ -1,3 +1,4 @@
+'use strict'
 // 引入express/handlebars/reataurant
 const express = require('express')
 const exphbs = require('express-handlebars')
@@ -18,18 +19,30 @@ app.use(express.static('public'))
 
 // 設定首頁的路由並顯示餐廳清單
 app.get('/', (req, res) => {
-  // console.log(restaurantList.results)
-  res.render('homePage', { restaurantList: restaurantList.results})
+  res.render('index', { restaurantList: restaurantList.results})
 })
 
+// 設定個別餐廳詳細資訊
 app.get('/restaurants/:id', (req, res) => {
-  console.log(req.params.id)
   const clickedRestaurantId = req.params.id
   const restaurant = restaurantList.results.find(restaurant => restaurant.id.toString() === clickedRestaurantId)
-  res.render('showPage', { restaurant: restaurant })
+  res.render('show', { restaurant: restaurant })
+})
+
+app.get('/search', (req, res) => {
+  const keyword = req.query.keyword.trim().toLowerCase()
+  const results = restaurantList.results.filter( restaurant => {
+    return searchKeyword(restaurant.name, keyword) || searchKeyword(restaurant.category, keyword)
+  })
+  res.render('index', { restaurantList: results, keyword: keyword})
 })
 
 // 利用listen將網頁呈現在htttp://localhost:3000
 app.listen( port, () => {
   console.log(`restaurant_list is running on http://localhost: ${port}`)
 })
+
+// 宣告搜尋關鍵字函式
+function searchKeyword(isSearchedItem, keyword){
+  return isSearchedItem.toLowerCase().includes(keyword)
+}
