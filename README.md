@@ -7,8 +7,8 @@ ___
 + 首頁顯示所有餐廳圖片、名稱、分類與評分。
 + 點擊餐廳可獲取詳細資訊。如：餐廳類別、地址、電話以及餐廳介紹。
 ## Environment Setup - 環境建置
----
-+[Node.js](https://nodejs.org/en/)
+<hr></hr>
++ [Node.js](https://nodejs.org/en/)
 ## Installing - 安裝流程
 ---
 1. 開啟終端機(terminal)並複製(clone)此專案至本機電腦
@@ -33,9 +33,9 @@ nodemon app.js
 ---
 ## Using Tools - 使用工具
 ---
-+開發環境 - [Visual Studio Code](https://code.visualstudio.com/)
-+開發框架 - [Express](http://expressjs.com/)
-+模板引擎 - [Express-Handlebars](https://www.npmjs.com/package/express-handlebars)
++ 開發環境 - [Visual Studio Code](https://code.visualstudio.com/)
++ 開發框架 - [Express](http://expressjs.com/)
++ 模板引擎 - [Express-Handlebars](https://www.npmjs.com/package/express-handlebars)
 ## Contributor - 專案開發人員
 ---
 + [Ethon Yeh](https://github.com/ethon92)
