@@ -1,11 +1,11 @@
 # My Restaurant List - 我的餐廳清單
----
+***
 一個可以尋找各個種類餐廳的網站。
 ## Features - 功能列表
----
-+可輸入"餐廳名稱"與"餐廳分類"來查詢所想找的餐廳。
-+首頁顯示所有餐廳圖片、名稱、分類與評分。
-+點擊餐廳可獲取詳細資訊。如：餐廳類別、地址、電話以及餐廳介紹。
+___
++ 可輸入"餐廳名稱"與"餐廳分類"來查詢所想找的餐廳。
++ 首頁顯示所有餐廳圖片、名稱、分類與評分。
++ 點擊餐廳可獲取詳細資訊。如：餐廳類別、地址、電話以及餐廳介紹。
 ## Environment Setup - 環境建置
 ---
 +[Node.js](https://nodejs.org/en/)
@@ -38,4 +38,4 @@ nodemon app.js
 +模板引擎 - [Express-Handlebars](https://www.npmjs.com/package/express-handlebars)
 ## Contributor - 專案開發人員
 ---
-+[Ethon Yeh](https://github.com/ethon92)
++ [Ethon Yeh](https://github.com/ethon92)
