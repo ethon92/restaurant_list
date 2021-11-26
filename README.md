@@ -7,7 +7,7 @@ ___
 + 首頁顯示所有餐廳圖片、名稱、分類與評分。
 + 點擊餐廳可獲取詳細資訊。如：餐廳類別、地址、電話以及餐廳介紹。
 ## Environment Setup - 環境建置
-<hr></hr>
+- - -
 + [Node.js](https://nodejs.org/en/)
 ## Installing - 安裝流程
 ---
