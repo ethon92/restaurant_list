@@ -35,8 +35,8 @@ nodemon app.js
 
 ## Screen Photo - 專案畫面
 
-!(https://github.com/ethon92/restaurant_list/blob/main/public/images/restauranthomepage.JPG)
-!(https://github.com/ethon92/restaurant_list/blob/main/public/images/restaurantdetail.JPG)
+![image](https://github.com/ethon92/restaurant_list/blob/main/public/images/restauranthomepage.JPG)
+![image](https://github.com/ethon92/restaurant_list/blob/main/public/images/restaurantdetail.JPG)
 
 ## Using Tools - 使用工具
 
