@@ -38,6 +38,20 @@ header {
 #search-button{
   background-color: #9b4b4b;
 }
+
+#noSearchIcon{
+  font-size: 50px; 
+  color:darkgrey
+}
+
+#noSearchMessage{
+  color: darkgrey;
+}
+
+#noSearchKeyword{
+  color: black;
+}
+
 .form-control::placeholder {
   color: #aaaaaa;
   font-size: 0.8rem;

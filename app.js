@@ -29,8 +29,9 @@ app.get('/restaurants/:id', (req, res) => {
   res.render('show', { restaurant: restaurant })
 })
 
+// 設定搜尋路由
 app.get('/search', (req, res) => {
-  const keyword = req.query.keyword.trim().toLowerCase()
+  const keyword = req.query.keyword.trim().toLowerCase() // 利用trim將空白剔除以及將字母轉換為小寫
   const results = restaurantList.results.filter( restaurant => {
     return searchKeyword(restaurant.name, keyword) || searchKeyword(restaurant.category, keyword)
   })
